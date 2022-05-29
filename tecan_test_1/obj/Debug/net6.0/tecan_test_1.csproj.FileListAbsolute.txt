@@ -1,0 +1,15 @@
+/home/luke/code/playground/tecan_test_1/obj/Debug/net6.0/tecan_test_1.csproj.AssemblyReference.cache
+/home/luke/code/playground/tecan_test_1/obj/Debug/net6.0/tecan_test_1.GeneratedMSBuildEditorConfig.editorconfig
+/home/luke/code/playground/tecan_test_1/obj/Debug/net6.0/tecan_test_1.AssemblyInfoInputs.cache
+/home/luke/code/playground/tecan_test_1/obj/Debug/net6.0/tecan_test_1.AssemblyInfo.cs
+/home/luke/code/playground/tecan_test_1/obj/Debug/net6.0/tecan_test_1.csproj.CoreCompileInputs.cache
+/home/luke/code/playground/tecan_test_1/bin/Debug/net6.0/tecan_test_1
+/home/luke/code/playground/tecan_test_1/bin/Debug/net6.0/tecan_test_1.deps.json
+/home/luke/code/playground/tecan_test_1/bin/Debug/net6.0/tecan_test_1.runtimeconfig.json
+/home/luke/code/playground/tecan_test_1/bin/Debug/net6.0/tecan_test_1.dll
+/home/luke/code/playground/tecan_test_1/bin/Debug/net6.0/tecan_test_1.pdb
+/home/luke/code/playground/tecan_test_1/obj/Debug/net6.0/tecan_test_1.dll
+/home/luke/code/playground/tecan_test_1/obj/Debug/net6.0/refint/tecan_test_1.dll
+/home/luke/code/playground/tecan_test_1/obj/Debug/net6.0/tecan_test_1.pdb
+/home/luke/code/playground/tecan_test_1/obj/Debug/net6.0/tecan_test_1.genruntimeconfig.cache
+/home/luke/code/playground/tecan_test_1/obj/Debug/net6.0/ref/tecan_test_1.dll
