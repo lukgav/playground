@@ -59,32 +59,84 @@ namespace TransposeData
                     Console.WriteLine("");
                     currentColumnNumInFile += 1;
                 }
-
-
-
-                Console.WriteLine("Current Array: ");
-                for(int i=0;i < columnLength-1; i++)
-                {
-                    for(int j=0;j < rowLength; j++)
-                    {
-                        // foreach(int j=0;j<rowLength-1; j++)
-                        // {
-                        // arr[i,currentColumnNumInFile] = values[i];
-                        Console.Write("{0}", arr[i,j]);
-                    }
-                    Console.WriteLine();
-                }
-                // Console.WriteLine(rowLength);
-                // Console.WriteLine(columnLength);
-                
-                
-
-
-
             }
-            //read in data into a 2d Array
-            // transpose data thw 2d array
-            // return value
+            //Print results to check if transpose was successful:
+            Console.WriteLine("Current Array: ");
+            for(int i=0;i < columnLength-1; i++)
+            {
+                for(int j=0;j < rowLength; j++)
+                {
+                    Console.Write("{0}", arr[i,j]);
+                }
+                Console.WriteLine();
+            }
+            // string newCSVPath = @"./transposed_data.csv";
+            string newCSVPath = "/home/luke/code/playground/tecan_test_1/transposed_data.csv";
+
+            // file.WriteLine("HELLOW"); 
+            using (StreamWriter file = new StreamWriter(newCSVPath))
+            {
+                for (int i = 0; i < columnLength-1; i++)
+                {
+                        // Console.WriteLine("HELLOW"); 
+                        for (int j=0; j<rowLength;j++)
+                        {  
+                            // file.WriteLine("HELLOW"); 
+                            file.Write(arr[i,j]);
+                        }
+                        //go to next line
+                        file.WriteLine(); 
+
+                }
+            }
+
+            Console.WriteLine("Opened CSV File: ");
+            // Open the stream and read it back.
+            using (StreamReader sr = File.OpenText(newCSVPath))
+            {
+                string s = "";
+                while ((s = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(s);
+                }
+            }
         }
+
+
+        // using (FileStream fs = File.Create(newCSV))
+        // {   
+        //     for(int i=0;i < columnLength-1; i++)
+        //     {
+        //         for(int j=0;j < rowLength; j++)
+        //         {
+        //             fs.Write(arr[i,j]);
+        //         }
+        //     }
+        //     // byte[] info = new UTF8Encoding(true).GetBytes(arr);
+        //     // string[,] info = arr;
+        //     // // Add some information to the file.
+        //     // fs.Write(info, 0, info.Length);
+        // }
+
+        // using (System.IO.StreamWriter file = new System.IO.StreamWriter(newCSV))
+        // {
+        //     foreach (Object obj in arr)
+        //     {
+        //         file.Write(obj.ToString());
+        //     }
+        // }
+
+        // using (System.IO.StreamWriter file = new System.IO.StreamWriter(csvDir))
+        // {
+        //     file.Write(string.Join("", arr));
+        // }
+
+            //read in data into a 2d Array
+            // transpose data the 2d array
+            // Convert 2d Array in CSV
+            // Allow to scan all files in current directory. Must look for CSV files.  
+            //  If no CSV then return a string that says this
+            // Make this a clickable application
+        // }
     }
 }
