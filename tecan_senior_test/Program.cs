@@ -4,26 +4,6 @@ namespace ColorSorter
     class Program
     {
 
-
-        // static int[] InsertionSort(int[] arr)
-        // {
-        //     int n = arr.Length; 
-        //     for (int i = 1; i < n; ++i) { 
-        //         int key = arr[i]; 
-        //         int j = i - 1; 
-    
-        //         // Move elements of arr[0..i-1], 
-        //         // that are greater than key, 
-        //         // to one position ahead of 
-        //         // their current position 
-        //         while (j >= 0 && arr[j] > key) { 
-        //             arr[j + 1] = arr[j]; 
-        //             j = j - 1; 
-        //         } 
-        //         arr[j + 1] = key; 
-        //     }
-        // }
-        //Basic and bad sort algorithm but quick and easy to implement and fix for bugs...
         static int[,] InsertionSort2d(int[,] arr, int columnNumber)
         {
             int rowLength = arr.GetLength(0); 
@@ -41,9 +21,8 @@ namespace ColorSorter
                 while (l >= 0 && arr[columnNumber, l] > key) { 
                     arr[columnNumber, l + 1] = arr[columnNumber, l]; 
                     l = l - 1; 
-                } 
+                }
                 arr[columnNumber, l + 1] = key; 
-                // }
             }
             return arr;
         }
