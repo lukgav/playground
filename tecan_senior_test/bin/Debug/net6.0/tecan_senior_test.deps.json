@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "tecan_senior_test/1.0.0": {
+        "runtime": {
+          "tecan_senior_test.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "tecan_senior_test/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -105,8 +105,9 @@ namespace TransposeData
                 {
                     dirs[csvFileIteration] = dirs[csvFileIteration].Replace(c.ToString(), String.Empty);
                 }
-        
-                string newCSVPath = @"./Output/Output"+dirs[csvFileIteration];
+                dirs[csvFileIteration] = dirs[csvFileIteration].Replace("csv", String.Empty);
+
+                string newCSVPath = @"./Output/"+dirs[csvFileIteration] + "_transposed";
 
                 //Create Output Folder:
                 System.IO.Directory.CreateDirectory(@"./Output");
