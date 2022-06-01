@@ -162,13 +162,6 @@ namespace ColorSorter
             controller.sortArray();
 
             view.Print2dArray(model.ColourArray, model.RowLength, model.ColumnLength);
-
-            // for (int i=0; i<rowLength; i++){
-            //     for (int j=0; j<columnLength; j++){
-            //         Console.Write("{0};",sortedColourArray[i,j]);
-            //     }
-            //     Console.WriteLine();
-            // }
         }
     }
 }
