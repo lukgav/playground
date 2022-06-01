@@ -34,15 +34,6 @@ namespace ColorSorter
                 }
             }
 
-            //Print out column
-            for (int i=0; i<this.rowLength; i++){
-                for (int j=0; j<this.columnLength; j++){
-                    Console.Write("{0};",this.colourArray[i,j]);
-                }
-                Console.WriteLine();
-            }
-            Console.WriteLine("---------------------------");
-
             return this.ColourArray;
         }
 
@@ -74,20 +65,36 @@ namespace ColorSorter
 
     
 
-    // class View{
+    public class View{
+        
+        public View()
+        {
 
+        }
 
-    //     static void Color(){
-    //         public static System.Drawing.Color FromArgb (int argb);
-    //     }
-    // }
+        public void Print2dArray(int[,] pArr, int pRowLength, int pColumnLength){
+            for (int i=0; i<pRowLength; i++){
+                for (int j=0; j<pColumnLength; j++){
+                    Console.Write("{0};",pArr[i,j]);
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine("----------------------------");
+        }
+
+        // static void Color(){
+        //     public static System.Drawing.Color FromArgb (int argb);
+        // }
+    }
 
     class Controller
     {
         Model model;
-        public Controller(Model pModel)
+        View view;
+        public Controller(Model pModel, View pView)
         {
             model = pModel;
+            view = pView;
         }
 
 
@@ -125,44 +132,7 @@ namespace ColorSorter
             return sortedColourArray;
         }
 
-        // static void Main(string[] args)
-        // {
-        //     //Put into Model
-        //     int rowLength = 10;
-        //     int columnLength = 10;
-        //     int[,] ColourArray = new int[rowLength, columnLength];
-        //     Model model = new Model(rowLength, columnLength);
-
-        //     ColourArray = model.generate2DArray();
-
-        //     // int[,] ColourArray = new int[rowLength, columnLength];
-
-        //     // for (int i=0; i<rowLength; i++){
-        //     //     for (int j=0; j<columnLength; j++){
-        //     //         ColourArray[i,j] = rand.Next(255);
-        //     //     }
-        //     // }
-
-        //     // //Print out column
-        //     // for (int i=0; i<rowLength; i++){
-        //     //     for (int j=0; j<columnLength; j++){
-        //     //         Console.Write("{0};",ColourArray[i,j]);
-        //     //     }
-        //     //     Console.WriteLine();
-        //     // }
-        //     // Console.WriteLine("---------------------------");
-            
-        //     int[,] sortedColourArray = new int[model.rowLength, model.columnLength];
-        //     for (int j=0; j<model.columnLength; j++){
-        //         sortedColourArray = InsertionSort2d(model.ColourArray, j);
-        //     }
-        //     for (int i=0; i<model.rowLength; i++){
-        //         for (int j=0; j<model.columnLength; j++){
-        //             Console.Write("{0};",sortedColourArray[i,j]);
-        //         }
-        //         Console.WriteLine();
-        //     }
-
+        //OLD TODOS
             //Create random color generator
                 //Should be in 2d array
                 // needs to be in UI
@@ -181,42 +151,24 @@ namespace ColorSorter
             int columnLength = 10;
             int[,] ColourArray = new int[rowLength, columnLength];
             Model model = new Model(rowLength, columnLength);
-            
+            View view = new View();
+
             model.generate2DArray();
-            Controller controller = new Controller(model);
+            view.Print2dArray(model.ColourArray, model.RowLength, model.ColumnLength);
+                        //Print out column
 
+            Controller controller = new Controller(model,view);
 
-            // controller.InsertionSort2d();
+            controller.sortArray();
 
-            // int[,] ColourArray = new int[rowLength, columnLength];
+            view.Print2dArray(model.ColourArray, model.RowLength, model.ColumnLength);
 
             // for (int i=0; i<rowLength; i++){
             //     for (int j=0; j<columnLength; j++){
-            //         ColourArray[i,j] = rand.Next(255);
-            //     }
-            // }
-
-            // //Print out column
-            // for (int i=0; i<rowLength; i++){
-            //     for (int j=0; j<columnLength; j++){
-            //         Console.Write("{0};",ColourArray[i,j]);
+            //         Console.Write("{0};",sortedColourArray[i,j]);
             //     }
             //     Console.WriteLine();
             // }
-            // Console.WriteLine("---------------------------");
-
-            // int[,] sortedColourArray = new int[rowLength, columnLength];
-            // for (int j=0; j<columnLength; j++){
-            //     sortedColourArray = InsertionSort2d(ColourArray, j);
-            // }
-
-            int [,] sortedColourArray = controller.sortArray();
-            for (int i=0; i<rowLength; i++){
-                for (int j=0; j<columnLength; j++){
-                    Console.Write("{0};",sortedColourArray[i,j]);
-                }
-                Console.WriteLine();
-            }
         }
     }
 }
