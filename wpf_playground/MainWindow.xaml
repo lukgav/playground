@@ -8,22 +8,32 @@
         Title="MainWindow" Height="450" Width="800">
     <!--  There can only be one child inside teh Window. So StackPanel must bewithin Grid if both are wanted.    -->
     <Grid>
-      <TextBlock x:Name = "textBlock" HorizontalAlignment = "Left"
+      <!-- <TextBlock x:Name = "textBlock" HorizontalAlignment = "Left"
          Margin = "235,143,0,0" TextWrapping = "Wrap" Text = "Hello World!"
-         VerticalAlignment = "Top" Height = "44" Width = "102" /> 
+         VerticalAlignment = "Top" Height = "44" Width = "102" />  -->
 
-         
-    <Button> 
+      <StackPanel HorizontalAlignment="Left">
+        <Button Content="Generate" VerticalAlignment="Center" Width="75" Margin="100,10,0,0" Padding="0,50,0,0"/>
+          <!-- <Button>Button 1</Button> -->
+      </StackPanel>
+
+      <StackPanel HorizontalAlignment="Right">
+        <Button Content="Sort"  VerticalAlignment="Center" Width="75" Margin="-500,10,0,0" Padding="0,50,0,0"/>
+      </StackPanel>
+
+      <StackPanel HorizontalAlignment="Right">
+
+        <!-- Pixel Map  -->
+      </StackPanel>
+
+
+
+    <!-- <Button> 
         <Button.Content>Click Me</Button.Content> 
         <Button.Height>30</Button.Height> 
         <Button.Width>60</Button.Width> 
-    </Button> 
+    </Button>  -->
 
-    <StackPanel> 
-      <Button x:Name = "button" Content = "Click Me" HorizontalAlignment = "Left"  
-         Margin = "150" VerticalAlignment = "Top" Width = "75" /> 
-   </StackPanel>
     </Grid>
- 
 
 </Window>

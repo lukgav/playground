@@ -20,22 +20,30 @@ namespace wpf_playground
     /// </summary>
     public partial class MainWindow : Window
     {
+        private DrawingVisual CreateDrawingVisualRectangle()
+        {
+            DrawingVisual drawingVisual = new DrawingVisual();
+
+            // Retrieve the DrawingContext in order to create new drawing content.
+            DrawingContext drawingContext = drawingVisual.RenderOpen();
+
+            // Create a rectangle and draw it in the DrawingContext.
+            Rect rect = new Rect(new System.Windows.Point(160, 100), new System.Windows.Size(320, 80));
+            drawingContext.DrawRectangle(System.Windows.Media.Brushes.LightBlue, (System.Windows.Media.Pen)null, rect);
+
+            // Persist the drawing content.
+            drawingContext.Close();
+
+            return drawingVisual;
+        }
+
+        
         public MainWindow()
         {
             InitializeComponent();
 
-            // // Create the StackPanel 
-            // StackPanel stackPanel = new StackPanel(); 
-            // this.Content = stackPanel; 
 
-            // // Create the Button 
-            // Button button = new Button();
-            // button.Content = "Click Me"; 
-            // button.HorizontalAlignment = HorizontalAlignment.Left; 
-            // button.Margin = new Thickness(150); 
-            // button.VerticalAlignment = VerticalAlignment.Top; 
-            // button.Width = 75; 
-            // stackPanel.Children.Add(button); 
         }
+
     }
 }
