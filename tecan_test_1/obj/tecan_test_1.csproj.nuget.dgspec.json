@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/luke/code/playground/tecan_test_1/tecan_test_1.csproj": {}
+    "C:\\Users\\lukeg\\OneDrive\\Desktop\\cloudShare\\code\\playground\\tecan_test_1\\tecan_test_1.csproj": {}
   },
   "projects": {
-    "/home/luke/code/playground/tecan_test_1/tecan_test_1.csproj": {
+    "C:\\Users\\lukeg\\OneDrive\\Desktop\\cloudShare\\code\\playground\\tecan_test_1\\tecan_test_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/luke/code/playground/tecan_test_1/tecan_test_1.csproj",
+        "projectUniqueName": "C:\\Users\\lukeg\\OneDrive\\Desktop\\cloudShare\\code\\playground\\tecan_test_1\\tecan_test_1.csproj",
         "projectName": "tecan_test_1",
-        "projectPath": "/home/luke/code/playground/tecan_test_1/tecan_test_1.csproj",
-        "packagesPath": "/home/luke/.nuget/packages/",
-        "outputPath": "/home/luke/code/playground/tecan_test_1/obj/",
+        "projectPath": "C:\\Users\\lukeg\\OneDrive\\Desktop\\cloudShare\\code\\playground\\tecan_test_1\\tecan_test_1.csproj",
+        "packagesPath": "C:\\Users\\lukeg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lukeg\\OneDrive\\Desktop\\cloudShare\\code\\playground\\tecan_test_1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/luke/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\lukeg\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/168/sdk/6.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -20,8 +20,9 @@ namespace wpf_playground
     /// </summary>
     public partial class MainWindow : Window
     {
-        private DrawingVisual CreateDrawingVisualRectangle()
+        public DrawingVisual CreateDrawingVisualRectangle(string text)
         {
+            Console.WriteLine(text);
             DrawingVisual drawingVisual = new DrawingVisual();
 
             // Retrieve the DrawingContext in order to create new drawing content.
@@ -37,11 +38,11 @@ namespace wpf_playground
             return drawingVisual;
         }
 
-        
+
         public MainWindow()
         {
             InitializeComponent();
-
+            CreateDrawingVisualRectangle("test Drawing");
 
         }
 

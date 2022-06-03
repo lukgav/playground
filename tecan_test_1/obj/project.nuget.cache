@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w7NlXy25oHW04hbwEAoo5M6MAEgYa0uQ5MitItFktwok9h41SCnBZ6O/87FS7YRzvrw27Ps+oHePouq19YlmvA==",
+  "dgSpecHash": "iEjgcI+zbaMx2RstVoDmphFIa5QamgPPUDcKrgBO8Ucy3U9BZijWHPG7xViGzWr0zN8/W2KAQddGPPVf3cxmZA==",
   "success": true,
-  "projectFilePath": "/home/luke/code/playground/tecan_test_1/tecan_test_1.csproj",
+  "projectFilePath": "C:\\Users\\lukeg\\OneDrive\\Desktop\\cloudShare\\code\\playground\\tecan_test_1\\tecan_test_1.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

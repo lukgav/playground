@@ -1,0 +1,34 @@
+
+Pixel Sorter: 
+- Complete the Windows form for the images
+
+- Create Graphics Bitmap to draw pixel map of from array of randomly generated values 
+
+- Save Bitmap as an image
+
+- Sort Bitmap using sorting algorithm. Need to do this using a HUE value for reference
+
+- Save this SrtedBitmap as an image as well. 
+
+- Create Triggered events for buttons in Window to work with the control of the program. 
+
+- Allow for update of images in WPF Window for onc the image has been generated and then for when the image has been sorted. 
+
+- Unit testing for prorgram
+
+- Mock testing for dependencies
+
+Transposer: 
+- Technically does not meet requirements as first transposed image is manually copied.
+   - This can be easily fixed just changing how files are read in and where they are written.
+
+- Unit testing using Mocks 
+
+- Mock testing for dependancies that are used. 
+
+
+
+
+- If Pixel class is needed one could also implement Factory design pattern for pixel creation. But I think this is overcomplicated.
+
+- 

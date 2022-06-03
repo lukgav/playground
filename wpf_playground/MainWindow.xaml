@@ -22,9 +22,63 @@
       </StackPanel>
 
       <StackPanel HorizontalAlignment="Right">
-
         <!-- Pixel Map  -->
       </StackPanel>
+
+<Image Width="200" 
+Source="C:\Users\lukeg\OneDrive\Desktop\cloudShare\code\playground\wpf_playground\SampImg.jpg"/>
+
+<Image Width="200">
+  <Image.Source>
+    <!-- To save significant application memory, set the DecodePixelWidth or  
+     DecodePixelHeight of the BitmapImage value of the image source to the desired 
+     height and width of the rendered image. If you don't do this, the application will 
+     cache the image as though it were rendered as its normal size rather then just 
+     the size that is displayed. -->
+    <!-- Note: In order to preserve aspect ratio, only set either DecodePixelWidth
+         or DecodePixelHeight but not both. -->
+    <BitmapImage DecodePixelWidth="200"  
+     UriSource="C:\Users\lukeg\OneDrive\Desktop\cloudShare\code\playground\wpf_playground\SampImg.jpg"/>
+  </Image.Source>
+</Image>
+
+
+
+    <!-- <Canvas Height="300" Width="300">
+
+      Draws a diagonal line from (10,10) to (50,50).
+      <Line
+        X1="10" Y1="10"
+        X2="50" Y2="50"
+        Stroke="Black"
+        StrokeThickness="4" />
+
+      Draws a diagonal line from (10,10) to (50,50)
+          and moves it 100 pixels to the right. 
+      <Line
+        X1="10" Y1="10"
+        X2="50" Y2="50"
+        StrokeThickness="4"
+        Canvas.Left="100">
+        <Line.Stroke>
+          <RadialGradientBrush GradientOrigin="0.5,0.5" Center="0.5,0.5" RadiusX="0.5" RadiusY="0.5">
+            <RadialGradientBrush.GradientStops>
+              <GradientStop Color="Red" Offset="0" />
+              <GradientStop Color="Blue" Offset="0.25" />
+            </RadialGradientBrush.GradientStops>
+          </RadialGradientBrush>
+        </Line.Stroke>
+      </Line>
+
+      Draws a horizontal line from (10,60) to (150,60).
+      <Line
+        X1="10" Y1="60"
+        X2="150" Y2="60"
+        Stroke="Black"
+        StrokeThickness="4"/>
+
+    </Canvas> -->
+
 
 
 

@@ -1,0 +1,5 @@
+C:\Users\lukeg\OneDrive\Desktop\cloudShare\code\playground\graphics_playground\obj\Debug\net6.0\graphics_playground.csproj.AssemblyReference.cache
+C:\Users\lukeg\OneDrive\Desktop\cloudShare\code\playground\graphics_playground\obj\Debug\net6.0\graphics_playground.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lukeg\OneDrive\Desktop\cloudShare\code\playground\graphics_playground\obj\Debug\net6.0\graphics_playground.AssemblyInfoInputs.cache
+C:\Users\lukeg\OneDrive\Desktop\cloudShare\code\playground\graphics_playground\obj\Debug\net6.0\graphics_playground.AssemblyInfo.cs
+C:\Users\lukeg\OneDrive\Desktop\cloudShare\code\playground\graphics_playground\obj\Debug\net6.0\graphics_playground.csproj.CoreCompileInputs.cache
